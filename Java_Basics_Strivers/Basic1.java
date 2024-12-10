@@ -4,7 +4,7 @@ public class Basic1 {
     public static void main(String[] args){
 
         for(int i=0;i<=10;i++){
-            System.out.println("The Gievn Number is:"+i);
+            System.out.println("The Given Number is:"+i);
         }
     }
 }
