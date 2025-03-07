@@ -1,4 +1,4 @@
-public class tUf {
+public class RemChar {
     public static String solve(String str, int n) {
         StringBuffer ans = new StringBuffer();
 
