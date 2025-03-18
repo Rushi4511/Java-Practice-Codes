@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class rem_char_2_str1 {
+public class Rem_char_2_str1 {
     public static String solve(String str1, String str2) {
         StringBuffer ans = new StringBuffer();
         for (int i = 0; i < str1.length(); i++) {
