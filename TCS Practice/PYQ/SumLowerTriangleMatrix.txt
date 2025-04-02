@@ -1,0 +1,5 @@
+class LowerTriangleSum{
+    public static void main(String[] args){
+        
+    }
+}
