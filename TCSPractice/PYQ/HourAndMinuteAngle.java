@@ -1,3 +1,4 @@
+package Arrays.PYQ;
 import java.util.*;
 
 class HourMinAng{

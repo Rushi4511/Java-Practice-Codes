@@ -1,4 +1,4 @@
-package PYQ;
+package Arrays.PYQ;
 
 class ConvertStrToInt {
 

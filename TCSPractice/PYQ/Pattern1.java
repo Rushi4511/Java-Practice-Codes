@@ -1,4 +1,4 @@
-package PYQ;
+package Arrays.PYQ;
 
 class Pattern1 {
     public static void main(String[] args) {

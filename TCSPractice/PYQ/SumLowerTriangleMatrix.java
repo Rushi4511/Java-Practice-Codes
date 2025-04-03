@@ -1,4 +1,4 @@
-package PYQ;
+package Arrays.PYQ;
 
 class LowerTriangleSum {
     public static void main(String[] args) {
