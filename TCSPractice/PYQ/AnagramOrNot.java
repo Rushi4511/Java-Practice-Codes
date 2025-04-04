@@ -8,14 +8,14 @@ public class AnagramOrNot {
             return true;
         }
 
-        int[] freq = new int[200];
+        int[] freq = new int[26];
 
         for (int i = 0; i < str1.length(); i++) {
-            freq[str1.charAt(i)]++;
+            freq[str1.charAt(i) - 'A']++;
         }
 
         for (int i = 0; i < str2.length(); i++) {
-            freq[str2.charAt(i)]--;
+            freq[str2.charAt(i) - 'A']--;
         }
 
         for (int i = 0; i < freq.length; i++) {
