@@ -3,10 +3,10 @@ import java.util.*;
 class MergeSort {
     private static void merge(int[] arr, int low, int mid, int high) {
         ArrayList<Integer> temp = new ArrayList<>(); // temporary array
-        int left = low;      // starting index of left half of arr
-        int right = mid + 1;   // starting index of right half of arr
+        int left = low; // starting index of left half of arr
+        int right = mid + 1; // starting index of right half of arr
 
-        //storing elements in the temporary array in a sorted manner//
+        // storing elements in the temporary array in a sorted manner//
 
         while (left <= mid && right <= high) {
             if (arr[left] <= arr[right]) {
@@ -25,7 +25,7 @@ class MergeSort {
             left++;
         }
 
-        //  if elements on the right half are still left //
+        // if elements on the right half are still left //
         while (right <= high) {
             temp.add(arr[right]);
             right++;
@@ -38,14 +38,16 @@ class MergeSort {
     }
 
     public static void mergeSort(int[] arr, int low, int high) {
-        if (low >= high) return;
-        int mid = (low + high) / 2 ;
-        mergeSort(arr, low, mid);  // left half
+        if (low >= high)
+            return;
+        int mid = (low + high) / 2;
+        mergeSort(arr, low, mid); // left half
         mergeSort(arr, mid + 1, high); // right half
-        merge(arr, low, mid, high);  // merging sorted halves
+        merge(arr, low, mid, high); // merging sorted halves
     }
 }
-public class tUf {
+
+public class MergeSort1 {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int n = 7;
@@ -55,7 +57,7 @@ public class tUf {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
-        Solution.mergeSort(arr, 0, n - 1);
+        MergeSort.mergeSort(arr, 0, n - 1);
         System.out.println("After sorting array: ");
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
