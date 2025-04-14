@@ -1,4 +1,4 @@
-package TCSPractice.PYQ;
+
 
 public class AllSubStrings {
 
